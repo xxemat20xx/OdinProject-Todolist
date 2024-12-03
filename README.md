@@ -5,7 +5,7 @@ A simple TodoList application built using modern JavaScript, Webpack, and CSS. T
 ![TodoList Screenshot](./src/img/ODIN-Todolist.png)
 
 ### 🔗 Live Demo
-[Click here to view the live project](https://xxemat20xx.github.io/Todolist/)
+[Click here to view the live project](https://xxemat20xx.github.io/OdinProject-Todolist/)
 ---
 
 ## 🚀 Features
