@@ -17,5 +17,5 @@ A simple TodoList application built using modern JavaScript, Webpack, and CSS. T
 ## 🛠️ Built With
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript
 - Webpack
