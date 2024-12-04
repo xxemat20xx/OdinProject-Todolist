@@ -237,7 +237,7 @@ export class TaskHandler {
         this.currentTaskEl.textContent = this.importantTasksBtn.textContent;
     }
     filterCompletedTask() {
-        const completedTask = this.tasks.filter((task) => task.isTaskCompleted);
+        const completedTask = this.tasks.filter((task) => task.isTaskCompleted = true);
         this.renderTasks(completedTask);
         this.currentTaskEl.textContent = this.completedTaskBtn.textContent;
     }
