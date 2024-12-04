@@ -102,7 +102,6 @@ export class ProjectManager {
         });
     }
     openProjectForm(id) {
-
         const project = this.projects.find((t) => t.id === parseInt(id));
         if (project) {
             document.getElementById('title').value = project.projectTitle;
