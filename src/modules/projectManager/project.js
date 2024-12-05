@@ -13,7 +13,13 @@ export class ProjectManager {
 
         // project local storage
         this.projects = JSON.parse(localStorage.getItem('projects')) || [];
-
+        if (this.projects.length === 0) {
+            this.projects.push({
+                id: 123, // Assign a fixed ID
+                projectTitle: "Default Project",
+            });
+            this.saveProjectToLocalStorage(); // Save the updated tasks array
+        }
         // Bind Event listener
         this.addEventListeners();
 
