@@ -15,7 +15,7 @@ A simple TodoList application built using modern JavaScript, Webpack, and CSS. T
 - Mark tasks as completed
 
 ## 🛠️ Built With
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Webpack
