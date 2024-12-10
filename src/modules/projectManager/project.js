@@ -19,7 +19,7 @@ export class ProjectManager {
                 projectTitle: "Default Project",
             });
             this.saveProjectToLocalStorage(); // Save the updated tasks array
-        }   
+        }
         // Bind Event listener
         this.addEventListeners();
 
@@ -84,7 +84,7 @@ export class ProjectManager {
                 : project.projectTitle;
             newProject.className = "project-list";
             newProject.innerHTML = `
-                        <span id="project-title" data-id='${project.id}'><i class='bx bxs-rocket'></i><span>${truncatedTitle}</span></span>
+                        <span id="project-title" data-id='${project.id}'><i class='bx bx-chevron-right'></i>${truncatedTitle}</span>
                         <button class='project-list-btn btn' id='deleteProjectBtn'><i class='bx bxs-trash'></i></button>
             `;
             this.projectList.appendChild(newProject);
@@ -114,6 +114,5 @@ export class ProjectManager {
         this.saveProjectToLocalStorage();
         this.renderProjects();
     }
-    
 }
 const projectApp = new ProjectManager();
