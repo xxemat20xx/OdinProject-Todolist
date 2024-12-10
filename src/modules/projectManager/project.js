@@ -92,8 +92,9 @@ export class ProjectManager {
         const projectListBtn = document.querySelectorAll('#project-title');
         projectListBtn.forEach((btn) => {
             btn.addEventListener('click', (event) => {
-                const projectId = event.target.dataset.id;
+                const projectId = event.target.parentElement.dataset.id;
                 this.openProjectForm(projectId);
+              
             });
         });
         const deleteProjectBtn = document.querySelectorAll('#deleteProjectBtn');
@@ -102,7 +103,6 @@ export class ProjectManager {
         });
     }
     openProjectForm(id) {
-
         const project = this.projects.find((t) => t.id === parseInt(id));
         if (project) {
             document.getElementById('title').value = project.projectTitle;
