@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Odin Project Todolist App</title>
+
+</head>
+
+<body>
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <img src="./img/note-logo-01.png" alt="...">
+            <h3>Todo List App</h3>
+        </div>
+        <div class="side-nav-buttons">
+            <button class="side-nav-btn" id="allTasksBtn"><i class='bx bxs-envelope'></i><span>All Tasks</span></button>
+            <button class="side-nav-btn" id="todaysTasksBtn"><i class='bx bxs-calendar'></i><span>Today's Tasks</span></button>
+            <button class="side-nav-btn" id="weekTasksBtn"><i class='bx bxs-calendar-check'></i><span>This Week's
+                Tasks</span></button>
+            <button class="side-nav-btn" id="importantTasksBtn"><i class='bx bxs-calendar-star'></i><span>Important
+                Tasks</span></button>
+            <button class="side-nav-btn" id="completedTaskBtn"><i class='bx bxs-check-circle'></i></i><span>Completed
+                Tasks</span></button>
+            <br>
+          
+            <div class="project-nav" id="projectNav">
+                <h3>Projects</h3>
+                <button id="project-popupBtn"><span>&#43;</span><small>Add Project</small></button>
+                <div class="project-content">
+
+                    <div class="project-lists">
+                        <!-- PROJECT LIST TO APPEN -->
+                    </div>
+                    
+                    <div class="project-popup-container">
+                        <div class="project-contents">
+                            <input type="text" id="projectInput" placeholder="Enter new project">
+
+                        <div class="project-buttons">
+                            <button class="project-btn" id="addProjectBtn"><i class='bx bx-plus'></i></button>
+                            <button class="project-btn" id="closeProjectPopupBtn"><i class='bx bx-x'></i></button>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-nav-footer">
+            <a href="https://github.com/xxemat20xx" target="_blank"><img src="./img/github-mark-white.png"
+                    alt="..."></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="message-notif-content">
+            <!-- <div class="msg-notif-text added-task-msg">Added to Task</div>
+            <div class="msg-notif-text deleted-task-msg">Added to Task</div> -->
+        </div>
+        <div class="main-content-header">
+            <div class="main-content-header-content">
+                <h1 id="currentTaskHead">Todo List</h1>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <div class="main-content-header-content main-img-container">
+                <!-- <div class="note-logo-text">
+                    <button class="btn btn-note" id="openNoteBtn"><i class='bx bxs-note'></i></button>
+
+                </div> -->
+                <div class="header-logo-text">
+                    <img src="./img/logo.png" alt="">
+                    <strong>Odin Project</strong>
+                </div>
+            </div>
+        </div>
+        <!-- Todo List -->
+        <ul id="todoList"></ul>
+
+        <!-- Modal -->
+        <div id="taskModal" class="modal">
+            <div class="modal-content">
+                <h2>Add Task</h2>
+                <form id="taskForm">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" name="dueDate" required>
+
+                    <div class="form-buttons">
+                        <label for="isImportant">Important:</label>
+                        <input type="checkbox" id="isImportant" name="isImportant">
+                        <button type="submit" id="taskBtn">Add Task</button>
+                        <button type="button" id="closeModalBtn">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Note Content -->
+    <div class="note-content"></div>
+</body>
+
+</html>
